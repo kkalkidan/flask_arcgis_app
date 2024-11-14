@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ArcGIS Flask App</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.24/esri/themes/light/main.css">
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for("main.index") }}">Home</a>
+        <a href="{{ url_for("map.show_map") }}">Map</a>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>
